@@ -107,6 +107,7 @@ button {
         display: block;
         text-align: center;
         background-color: white;
+        color: black;
         font-family: "Inter", sans-serif;
         font-size: 18px;
         border: none;
