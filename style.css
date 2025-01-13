@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 10vh;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    padding: 10px;
+    width: 500px;
+    margin: 10px auto;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+}
+
+form {
+    width: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    width: 50%;
+    height: 40px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 90px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rybouyoub Corp.</title>
+</head>
+<body>
+
+    <h1>Connexion Front-End - Back-End<br><br>Système de ticket avec base de données</h1>
+
+    <div class="container">
+        <form action="/post" method="post">
+            <label for="prenom">Votre prénom :</label>
+            <input type="text" name="prenom" id="prenom">
+            <label for="nom">Votre nom :</label>
+            <input type="text" name="nom" id="nom">
+            <label for="poste">Votre poste :</label>
+            <select name="poste" id="poste">
+            <option value="Développeur">Développeur</option>
+            <option value="Technicien">Technicien</option>
+            <option value="Chef de projet">Chef de projet</option>
+            <option value="Spécialiste">Spécialiste en sécurité</option>
+            <option value="Secrétaire">Secrétaire</option>
+            </select>
+            <label for="aide">Besoin d'aide ? :</label>
+            <select name="aide" id="aide">
+            <option value="Matériel">Besoin de matériel informatique</option>
+            <option value="Réseau">Signaler un problème de réseau</option>
+            <option value="Serveur">Problème au niveau de l'accès au serveur de l'entreprise</option>
+            <option value="Réunion">Demande de réunion</option>
+            </select>
+            <label for="demande">Demande :</label>
+            <input type="text" name="demande" id="demande">
+            <button type="submit">Envoyer le ticket</button>
+        </form>
+    </div>
+
+    <script src="server.js"></script>
+    
+</body>
+</html>
