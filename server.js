@@ -7,7 +7,9 @@ const app = express();
 app.use(express.static(__dirname));
 app.use(express.urlencoded({extended: true}));
 
-mongoose.connect('mongodb+srv://Cluster98792:ThisIsATest@cluster0.watpj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+require('dotenv').config();
+
+mongoose.connect(`mongodb+srv://Cluster98792:${process.env.PASSWORD}@cluster0.watpj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`);
 const db = mongoose.connection;
 db.once('open', () => {
     console.log('Connexion à la base de données réussie !');
@@ -37,8 +39,8 @@ app.post('/post', async (req, res) => {
         demande,
     });
     await user.save();
-    console.log(user);
-    res.send('Envoie du ticket dans la base de données réussie !');
+    console.log("Envoie des données réussie : " + user);
+    res.redirect(301, "valide/index.html");
 });
 
 app.listen(port, () => {
