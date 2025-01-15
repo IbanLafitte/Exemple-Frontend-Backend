@@ -39,10 +39,10 @@ app.post('/post', async (req, res) => {
         demande,
     });
     await user.save();
-    console.log("Envoie des données réussie : " + user);
+    console.log("Envoi des données réussi : " + user);
     res.redirect(301, "valide/index.html");
 });
 
 app.listen(port, () => {
-    console.log(`Le serveur tourne sur http://localhost:${port}`);
+    console.log(`Le serveur est actif !`);
 });
